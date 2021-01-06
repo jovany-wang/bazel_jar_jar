@@ -3,9 +3,10 @@ load(
     "jar_jar"
 )
 
+
 jar_jar(
     name = "shaded_args",
-    input_jar = "@com_twitter_scalding_args//jar",
+    input_jar = "@my_maven//:com_google_guava_guava",
     rules = "shade_rule"
     )
 
